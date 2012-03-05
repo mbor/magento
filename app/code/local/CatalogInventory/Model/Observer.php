@@ -136,9 +136,9 @@ class Mage_CatalogInventory_Model_Observer
      */
     public function saveInventoryData($observer)
     {
-				if(strpos($_SERVER['REQUEST_URI'], 'duplicate')>0){
-					return $this;
-				}
+	if(strpos($_SERVER['REQUEST_URI'], 'duplicate')>0){
+		return $this;
+	}
 				
         $product = $observer->getEvent()->getProduct();
 
